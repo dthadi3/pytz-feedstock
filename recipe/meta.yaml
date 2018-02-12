@@ -1,15 +1,16 @@
-{% set version = "2017.3" %}
+{% set version = "2018.3" %}
 
 package:
   name: pytz
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pytz/pytz-{{ version }}.zip
-  sha256: fae4cffc040921b8a2d60c6cf0b5d662c1190fe54d718271db4eb17d44a185b7
+  url: https://pypi.io/packages/source/p/pytz/pytz-{{ version }}.tar.gz
+  sha256: 410bcd1d6409026fbaa65d9ed33bf6dd8b1e94a499e32168acfc7b332e4095c0
 
 build:
-  number: 3
+  number: 0
+  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
