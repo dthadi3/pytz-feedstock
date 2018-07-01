@@ -18,12 +18,15 @@ saving time.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pytz-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytz-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pytz-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pytz-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytz/badges/version.svg)](https://anaconda.org/conda-forge/pytz)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytz/badges/downloads.svg)](https://anaconda.org/conda-forge/pytz)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytz-green.svg)](https://anaconda.org/conda-forge/pytz) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytz.svg)](https://anaconda.org/conda-forge/pytz) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytz.svg)](https://anaconda.org/conda-forge/pytz) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytz.svg)](https://anaconda.org/conda-forge/pytz) |
 
 Installing pytz
 ===============
