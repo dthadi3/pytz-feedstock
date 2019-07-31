@@ -1,4 +1,4 @@
-{% set version = "2019.1" %}
+{% set version = "2019.2" %}
 
 package:
   name: pytz
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytz/pytz-{{ version }}.tar.gz
-  sha256: d747dd3d23d77ef44c6a3526e274af6efeb0a6f1afd5a69ba4d5be4098c8e141
+  sha256: 26c0b32e437e54a18161324a2fca3c4b9846b74a8dccddd843113109e1116b32
 
 build:
   number: 0
