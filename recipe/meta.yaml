@@ -1,4 +1,4 @@
-{% set version = "2019.3" %}
+{% set version = "2020.1" %}
 
 package:
   name: pytz
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytz/pytz-{{ version }}.tar.gz
-  sha256: b02c06db6cf09c12dd25137e563b31700d3b80fcc4ad23abb7a315f2789819be
+  sha256: c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048
 
 build:
   number: 0
@@ -29,7 +29,7 @@ about:
   home: http://pythonhosted.org/pytz/
   license: MIT
   license_file: LICENSE.txt
-  summary: 'World timezone definitions, modern and historical.'
+  summary: World timezone definitions, modern and historical.
   description: |
     pytz brings the Olson tz database into Python. This library allows
     accurate and cross platform timezone calculations using Python 2.4 or
