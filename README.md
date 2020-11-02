@@ -5,9 +5,13 @@ Home: http://pythonhosted.org/pytz/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytz-feedstock/blob/master/LICENSE.txt)
 
 Summary: World timezone definitions, modern and historical.
+
+Development: https://github.com/newvem/pytz
+
+Documentation: http://pythonhosted.org/pytz/
 
 pytz brings the Olson tz database into Python. This library allows
 accurate and cross platform timezone calculations using Python 2.4 or
