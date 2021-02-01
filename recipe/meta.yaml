@@ -1,4 +1,4 @@
-{% set version = "2020.5" %}
+{% set version = "2021.1" %}
 
 package:
   name: pytz
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytz/pytz-{{ version }}.tar.gz
-  sha256: 180befebb1927b16f6b57101720075a984c019ac16b1b7575673bea42c6c3da5
+  sha256: 83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da
 
 build:
   number: 0
