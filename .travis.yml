@@ -16,8 +16,6 @@ before_install:
   - source "$HOME/miniconda/etc/profile.d/conda.sh"
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
-#  - conda install python=3.7
-#  - conda config --add channels conda-forge
 install:
   - conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
   - conda config --set show_channel_urls true
@@ -28,7 +26,4 @@ install:
   - conda info
   - conda config --show-sources
   - conda list --show-channel-urls
-#  - make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
   - conda build ./recipe -m ./.ci_support/linux_64_.yaml
-  - upload_package ./ ./recipe ./.ci_support/linux_64_.yaml
-  - conda install pytz
