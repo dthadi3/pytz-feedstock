@@ -29,6 +29,6 @@ install:
   - conda config --show-sources
   - conda list --show-channel-urls
 #  - make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
-  - conda build ./recipe -m ./.ci_support/${CONFIG}.yaml
-  - upload_package ./ ./recipe ./.ci_support/${CONFIG}.yaml
+  - conda build ./recipe -m ./.ci_support/linux_64_.yaml
+  - upload_package ./ ./recipe ./.ci_support/linux_64_.yaml
   - conda install pytz
