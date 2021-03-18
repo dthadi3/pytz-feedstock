@@ -28,5 +28,7 @@ install:
   - conda info
   - conda config --show-sources
   - conda list --show-channel-urls
-  - conda build /home/conda/recipe_root -m /home/conda/feedstock_root/.ci_support/linux_ppc64le_.yaml --suppress-variables --clobber-file /home/conda/feedstock_root/.ci_support/clobber_linux_ppc64le_.yaml
+  - make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
+  - conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --clobber-file ./.ci_support/clobber_${CONFIG}.yaml
+  - upload_package ./ ./recipe ./.ci_support/${CONFIG}.yaml
   - conda install pytz
