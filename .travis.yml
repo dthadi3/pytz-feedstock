@@ -16,7 +16,17 @@ before_install:
   - source "$HOME/miniconda/etc/profile.d/conda.sh"
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
-  - conda install python=3.7
-  - conda config --add channels conda-forge
+#  - conda install python=3.7
+#  - conda config --add channels conda-forge
 install:
+  - conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
+  - conda config --set show_channel_urls true
+  - conda config --set auto_update_conda false
+  - conda config --set add_pip_as_python_dependency false
+  - conda config --set channel_priority strict
+  - conda info --json
+  - conda info
+  - conda config --show-sources
+  - conda list --show-channel-urls
+  - conda build
   - conda install pytz
